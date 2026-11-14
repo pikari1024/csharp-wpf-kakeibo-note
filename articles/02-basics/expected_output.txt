@@ -1,5 +1,6 @@
-# 記事02 サンプルの実行結果（./run_all.sh の出力）
+# 記事02 サンプルの実行結果（./run_all.sh の出力をそのまま保存）
 # 確認した環境：Debian 13 (Linux) / x86_64 / .NET SDK 10.0.404 / 2026-11-14
+# /tmp/csharp-wpf-kakeibo-note に clone した状態で実行しました。エラーに出るパスは、置いた場所によって変わります。
 # 英語環境のため、エラーメッセージは英語です。
 
 ===== s00_hello.cs =====
@@ -39,7 +40,7 @@ True
 [exit code: 0]
 
 ===== s06_type_error.cs =====
-s06_type_error.cs(4,14): error CS0029: Cannot implicitly convert type 'string' to 'int'
+/tmp/csharp-wpf-kakeibo-note/articles/02-basics/s06_type_error.cs(4,14): error CS0029: Cannot implicitly convert type 'string' to 'int'
 
 The build failed. Fix the build errors and run again.
 [exit code: 1]
@@ -56,7 +57,7 @@ System.String
 [exit code: 0]
 
 ===== s09_if_assign_error.cs =====
-s09_if_assign_error.cs(7,5): error CS0029: Cannot implicitly convert type 'int' to 'bool'
+/tmp/csharp-wpf-kakeibo-note/articles/02-basics/s09_if_assign_error.cs(7,5): error CS0029: Cannot implicitly convert type 'int' to 'bool'
 
 The build failed. Fix the build errors and run again.
 [exit code: 1]
@@ -64,7 +65,7 @@ The build failed. Fix the build errors and run again.
 ===== s10_bad_for.cs =====
 Unhandled exception. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
    at System.Collections.Generic.List`1.get_Item(Int32 index)
-   at Program.<Main>$(String[] args) in s10_bad_for.cs:line 9
+   at Program.<Main>$(String[] args) in /tmp/csharp-wpf-kakeibo-note/articles/02-basics/s10_bad_for.cs:line 9
 [exit code: 134]
 
 ===== s11_good_for.cs =====
