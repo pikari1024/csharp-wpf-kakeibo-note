@@ -1,0 +1,12 @@
+// 記事02「C#の超基礎①変数・型・if・for」ステップ6：よくある失敗コード（BAD）for の <= Count。実行すると例外で止まります
+// 実行：dotnet run s10_bad_for.cs
+
+var expenses = new List<int> { 1200, 980, 1500 };
+int sum = 0;
+
+for (int i = 0; i <= expenses.Count; i++)
+{
+    sum += expenses[i];
+}
+
+Console.WriteLine($"合計：{sum}円");
