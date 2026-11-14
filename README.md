@@ -1,0 +1,1 @@
+# csharp-wpf-kakeibo-note
